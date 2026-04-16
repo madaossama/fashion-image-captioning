@@ -1,6 +1,17 @@
 # Fashion Image Captioning
 
-A deep learning project for generating captions for fashion images.
+A deep learning project for generating captions for fashion images using an encoder-decoder architecture with soft attention.
+
+**Architecture:**
+- **Encoder:** ResNet-50 (pretrained) extracts spatial visual features
+- **Attention:** Soft attention mechanism focuses on relevant image regions
+- **Decoder:** LSTM generates captions word-by-word using attended features
+
+**Key Features:**
+- Transfer learning with pretrained ResNet
+- Spatial attention for interpretability
+- Teacher forcing during training
+- Greedy search for inference
 
 ## Files
 
